@@ -1,4 +1,4 @@
-***delay_line - Zawiera projekt lini opóżniającej do zaimportowanai w innych projektach
+﻿***delay_line - Zawiera projekt lini opóżniającej do zaimportowanai w innych projektach
 ***IP_Module - Zawiera wszystkie wygenerowane moduły IP, tam jest ich aktualna wersja ale nie modyfikować tam nic
 ***LUT - projekt do LUT (binaryzacja)
 ***REKA - Wszystkie projekty do detekcji skóry
