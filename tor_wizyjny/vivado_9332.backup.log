@@ -1,0 +1,290 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 14 20:04:37 2018
+# Process ID: 9332
+# Current directory: C:/Users/GaliTingus/Documents/SR_Project/tor_wizyjny
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13828 C:\Users\GaliTingus\Documents\SR_Project\tor_wizyjny\tor_wizyjny.xpr
+# Log file: C:/Users/GaliTingus/Documents/SR_Project/tor_wizyjny/vivado.log
+# Journal file: C:/Users/GaliTingus/Documents/SR_Project/tor_wizyjny\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/GaliTingus/Documents/SR_Project/tor_wizyjny/tor_wizyjny.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/GaliTingus/Documents/SR_Project/IP_Module'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 789.715 ; gain = 71.324
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/GaliTingus/Documents/SR_Project/tor_wizyjny/tor_wizyjny.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd}
+Adding cell -- digilentinc.com:ip:dvi2rgb:1.8 - dvi2rgb_0
+Adding cell -- digilentinc.com:ip:rgb2vga:1.0 - rgb2vga_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - GND
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - VCC
+Successfully read diagram <hdmi_vga> from BD file <C:/Users/GaliTingus/Documents/SR_Project/tor_wizyjny/tor_wizyjny.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 868.871 ; gain = 66.512
+save_project_as tor_test C:/Users/GaliTingus/Documents/SR_Project/tor_test -force
+Wrote  : <C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/ui/bd_390e6c89.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:vp:1.0 vp_0
+endgroup
+set_property location {3.5 1297 304} [get_bd_cells rgb2vga_0]
+delete_bd_objs [get_bd_nets dvi2rgb_0_vid_pData]
+delete_bd_objs [get_bd_nets dvi2rgb_0_vid_pVSync]
+delete_bd_objs [get_bd_nets dvi2rgb_0_vid_pHSync]
+delete_bd_objs [get_bd_nets dvi2rgb_0_vid_pVDE]
+set_property location {3 719 346} [get_bd_cells vp_0]
+set_property location {3 703 383} [get_bd_cells vp_0]
+connect_bd_net [get_bd_pins vp_0/pixel_in] [get_bd_pins dvi2rgb_0/vid_pData]
+WARNING: [BD 41-1306] The connection to interface pin /dvi2rgb_0/vid_pData is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+connect_bd_net [get_bd_pins dvi2rgb_0/vid_pHSync] [get_bd_pins vp_0/h_sync_in]
+WARNING: [BD 41-1306] The connection to interface pin /dvi2rgb_0/vid_pHSync is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+connect_bd_net [get_bd_pins dvi2rgb_0/vid_pVSync] [get_bd_pins vp_0/v_sync_in]
+WARNING: [BD 41-1306] The connection to interface pin /dvi2rgb_0/vid_pVSync is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+connect_bd_net [get_bd_pins vp_0/de_in] [get_bd_pins dvi2rgb_0/vid_pVDE]
+WARNING: [BD 41-1306] The connection to interface pin /dvi2rgb_0/vid_pVDE is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+connect_bd_net [get_bd_pins vp_0/clk] [get_bd_pins dvi2rgb_0/PixelClk]
+set_property location {3.5 977 386} [get_bd_cells rgb2vga_0]
+set_property location {4 979 357} [get_bd_cells rgb2vga_0]
+connect_bd_net [get_bd_pins vp_0/de_out] [get_bd_pins rgb2vga_0/rgb_pVDE]
+WARNING: [BD 41-1306] The connection to interface pin /rgb2vga_0/rgb_pVDE is being overridden by the user. This pin will not be connected as a part of interface connection vid_in
+connect_bd_net [get_bd_pins vp_0/de_out] [get_bd_pins rgb2vga_0/rgb_pData]
+WARNING: [BD 41-1306] The connection to interface pin /rgb2vga_0/rgb_pData is being overridden by the user. This pin will not be connected as a part of interface connection vid_in
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins vp_0/de_out] [get_bd_pins rgb2vga_0/rgb_pData]'
+connect_bd_net [get_bd_pins rgb2vga_0/rgb_pData] [get_bd_pins vp_0/pixel_out]
+WARNING: [BD 41-1306] The connection to interface pin /rgb2vga_0/rgb_pData is being overridden by the user. This pin will not be connected as a part of interface connection vid_in
+connect_bd_net [get_bd_pins rgb2vga_0/rgb_pHSync] [get_bd_pins vp_0/h_sync_out]
+WARNING: [BD 41-1306] The connection to interface pin /rgb2vga_0/rgb_pHSync is being overridden by the user. This pin will not be connected as a part of interface connection vid_in
+connect_bd_net [get_bd_pins vp_0/v_sync_out] [get_bd_pins rgb2vga_0/rgb_pVSync]
+WARNING: [BD 41-1306] The connection to interface pin /rgb2vga_0/rgb_pVSync is being overridden by the user. This pin will not be connected as a part of interface connection vid_in
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd> 
+Wrote  : <C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/ui/bd_390e6c89.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/RefClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=hdmi_vga_dvi2rgb_0_0_PixelClk 
+WARNING: [BD 41-927] Following properties on pin /rgb2vga_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=hdmi_vga_dvi2rgb_0_0_PixelClk 
+Wrote  : <C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd> 
+VHDL Output written to : C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.v
+VHDL Output written to : C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/sim/hdmi_vga.v
+VHDL Output written to : C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2vga_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VCC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vp_0 .
+Exporting to file C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hw_handoff/hdmi_vga.hwh
+Generated Block Design Tcl file C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hw_handoff/hdmi_vga_bd.tcl
+Generated Hardware Definition File C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.hwdef
+[Mon May 14 20:08:01 2018] Launched hdmi_vga_vp_0_0_synth_1, synth_1...
+Run output will be captured here:
+hdmi_vga_vp_0_0_synth_1: C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.runs/hdmi_vga_vp_0_0_synth_1/runme.log
+synth_1: C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.runs/synth_1/runme.log
+[Mon May 14 20:08:01 2018] Launched impl_1...
+Run output will be captured here: C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.runs/impl_1/runme.log
+set_property top tb_hdmi [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/GaliTingus/Documents/SR_Project/IP_Module/LUT_BIN/src/vp.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/src/vp.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/src/vp.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/GaliTingus/Documents/SR_Project/LUT/LUT/LUT.srcs/sources_1/ip/LUT/LUT.dcp
+ERROR: [Vivado 12-3175] File 'C:/Users/GaliTingus/Documents/SR_Project/LUT/LUT/LUT.srcs/sources_1/ip/LUT/LUT.dcp' skipped. Checkpoint files can only be added to design source filesets.
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+ERROR: [Common 17-39] 'import_files' failed due to earlier errors.
+generate_target all [get_files  C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'hdmi_vga' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd]
+export_simulation -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd] -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files -ipstatic_source_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd]
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'hdmi_vga_dvi2rgb_0_0'. Sub-design: 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'hdmi_vga_rgb2vga_0_0'. Sub-design: 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'hdmi_vga_clk_wiz_0_0'. Sub-design: 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'hdmi_vga_xlconstant_0_0'. Sub-design: 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_0/hdmi_vga_xlconstant_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'hdmi_vga_xlconstant_0_1'. Sub-design: 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_1/hdmi_vga_xlconstant_0_1.xci'.
+generate_target all [get_files  C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd]
+INFO: [BD 41-1662] The design 'hdmi_vga.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/ui/bd_390e6c89.ui> 
+VHDL Output written to : C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.v
+VHDL Output written to : C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/sim/hdmi_vga.v
+VHDL Output written to : C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2vga_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VCC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vp_0 .
+Exporting to file C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hw_handoff/hdmi_vga.hwh
+Generated Block Design Tcl file C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hw_handoff/hdmi_vga_bd.tcl
+Generated Hardware Definition File C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.hwdef
+catch { config_ip_cache -export [get_ips -all hdmi_vga_dvi2rgb_0_0] }
+catch { config_ip_cache -export [get_ips -all hdmi_vga_rgb2vga_0_0] }
+catch { config_ip_cache -export [get_ips -all hdmi_vga_clk_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all hdmi_vga_xlconstant_0_0] }
+catch { config_ip_cache -export [get_ips -all hdmi_vga_xlconstant_0_1] }
+catch { config_ip_cache -export [get_ips -all hdmi_vga_vp_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP hdmi_vga_vp_0_0, cache-ID = 4dfdcfed1be84be6; cache size = 0.128 MB.
+export_ip_user_files -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd]
+launch_runs -jobs 8 {hdmi_vga_dvi2rgb_0_0_synth_1 hdmi_vga_rgb2vga_0_0_synth_1 hdmi_vga_clk_wiz_0_0_synth_1 hdmi_vga_xlconstant_0_0_synth_1 hdmi_vga_xlconstant_0_1_synth_1}
+[Mon May 14 20:22:25 2018] Launched hdmi_vga_dvi2rgb_0_0_synth_1, hdmi_vga_rgb2vga_0_0_synth_1, hdmi_vga_clk_wiz_0_0_synth_1, hdmi_vga_xlconstant_0_0_synth_1, hdmi_vga_xlconstant_0_1_synth_1...
+Run output will be captured here:
+hdmi_vga_dvi2rgb_0_0_synth_1: C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.runs/hdmi_vga_dvi2rgb_0_0_synth_1/runme.log
+hdmi_vga_rgb2vga_0_0_synth_1: C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.runs/hdmi_vga_rgb2vga_0_0_synth_1/runme.log
+hdmi_vga_clk_wiz_0_0_synth_1: C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.runs/hdmi_vga_clk_wiz_0_0_synth_1/runme.log
+hdmi_vga_xlconstant_0_0_synth_1: C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.runs/hdmi_vga_xlconstant_0_0_synth_1/runme.log
+hdmi_vga_xlconstant_0_1_synth_1: C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.runs/hdmi_vga_xlconstant_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd] -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files -ipstatic_source_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse C:/Users/GaliTingus/Documents/SR_Project/LUT/LUT/LUT.srcs/sources_1/ip/LUT/LUT.xci
+export_ip_user_files -of_objects  [get_files  C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/LUT/LUT.xci] -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hdmi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/LUT.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/lut_binarize.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/dgl_1080p_cea.data'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/dgl_1280_1024_cea.data'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/dgl_720p_cea.data'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/lut_binarize.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/LUT.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_hdmi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ip/LUT/sim/LUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/hdmi_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/hdmi_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hdmi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6270b5ff3e0e45ac84b41b854916c6a7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_hdmi_behav xil_defaultlib.tb_hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port pixel_out on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:71]
+ERROR: [VRFC 10-426] cannot find port vsync_out on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:70]
+ERROR: [VRFC 10-426] cannot find port hsync_out on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:69]
+ERROR: [VRFC 10-426] cannot find port de_out on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:68]
+ERROR: [VRFC 10-426] cannot find port pixel_in on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:66]
+ERROR: [VRFC 10-426] cannot find port vsync on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:65]
+ERROR: [VRFC 10-426] cannot find port hsync on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:64]
+ERROR: [VRFC 10-426] cannot find port de on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:63]
+ERROR: [VRFC 10-2063] Module <dist_mem_gen_v8_0_12> not found while processing module instance <inst> [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ip/LUT/sim/LUT.v:66]
+ERROR: [VRFC 10-2063] Module <hdmi_out> not found while processing module instance <file_output> [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:89]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1095.855 ; gain = 4.590
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hdmi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/LUT.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/lut_binarize.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/dgl_1080p_cea.data'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/dgl_1280_1024_cea.data'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/dgl_720p_cea.data'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/lut_binarize.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/LUT.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_hdmi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ip/LUT/sim/LUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/hdmi_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/hdmi_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hdmi
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6270b5ff3e0e45ac84b41b854916c6a7 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_hdmi_behav xil_defaultlib.tb_hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port pixel_out on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:71]
+ERROR: [VRFC 10-426] cannot find port v_sync_out on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:70]
+ERROR: [VRFC 10-426] cannot find port h_sync_out on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:69]
+ERROR: [VRFC 10-426] cannot find port de_out on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:68]
+ERROR: [VRFC 10-426] cannot find port pixel_in on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:66]
+ERROR: [VRFC 10-426] cannot find port v_sync on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:65]
+ERROR: [VRFC 10-426] cannot find port h_sync on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:64]
+ERROR: [VRFC 10-426] cannot find port de on this module [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:63]
+ERROR: [VRFC 10-2063] Module <dist_mem_gen_v8_0_12> not found while processing module instance <inst> [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ip/LUT/sim/LUT.v:66]
+ERROR: [VRFC 10-2063] Module <hdmi_out> not found while processing module instance <file_output> [C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v:89]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/LUT/LUT.xci] -no_script -reset -force -quiet
+remove_files  C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/LUT/LUT.xci
+create_bd_cell -type ip -vlnv xilinx.com:user:vp:1.0 vp_1
+undo
+INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv xilinx.com:user:vp:1.0 vp_1'
+regenerate_bd_layout
+import_files -force -norecurse C:/Users/GaliTingus/Documents/SR_Project/IP_Module/LUT_BIN/src/LUT/LUT.xci
+export_ip_user_files -of_objects  [get_files  C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/LUT/LUT.xci] -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/LUT/LUT.xci] -no_script -reset -force -quiet
+remove_files  C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/LUT/LUT.xci
+import_files -norecurse C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci
+CRITICAL WARNING: [IP_Flow 19-3389] Failed to import IP file 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci': IP name 'hdmi_vga_vp_0_0' is already in use in this project.  Please choose a different name.
+
+CRITICAL WARNING: [filemgmt 20-984] The source file 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci' cannot be added to the fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files  C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci] -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci] -no_script -reset -force -quiet
+remove_files  C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci
+WARNING: [filemgmt 20-1445] Cannot import file 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci' on top of itself. Importing a file from the imported source directory can cause this problem.
+import_files -norecurse C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci
+CRITICAL WARNING: [IP_Flow 19-3389] Failed to import IP file 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci': IP name 'hdmi_vga_vp_0_0' is already in use in this project.  Please choose a different name.
+
+CRITICAL WARNING: [filemgmt 20-984] The source file 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci' cannot be added to the fileset 'sources_1'.
+CRITICAL WARNING: [filemgmt 20-1445] Cannot import file 'C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci' on top of itself. Importing a file from the imported source directory can cause this problem.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 14 20:42:15 2018...

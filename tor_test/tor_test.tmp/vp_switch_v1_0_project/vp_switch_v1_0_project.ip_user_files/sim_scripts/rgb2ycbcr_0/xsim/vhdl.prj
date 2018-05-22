@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../../../../IP_Module/VP_Simple_Switch/src/rgb2ycbcr_0/src/MUL/sim/MUL.vhd" \
+"../../../../../../../IP_Module/VP_Simple_Switch/src/rgb2ycbcr_0/src/ADD/sim/ADD.vhd" \
+
+nosort

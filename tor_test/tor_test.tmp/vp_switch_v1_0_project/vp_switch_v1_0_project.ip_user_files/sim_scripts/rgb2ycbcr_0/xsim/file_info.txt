@@ -1,0 +1,6 @@
+MUL.vhd,vhdl,xil_defaultlib,../../../../../../../IP_Module/VP_Simple_Switch/src/rgb2ycbcr_0/src/MUL/sim/MUL.vhd,
+ADD.vhd,vhdl,xil_defaultlib,../../../../../../../IP_Module/VP_Simple_Switch/src/rgb2ycbcr_0/src/ADD/sim/ADD.vhd,
+register.v,verilog,xil_defaultlib,../../../../../../../IP_Module/VP_Simple_Switch/src/rgb2ycbcr_0/src/register.v,
+rgb2ycbcr.v,verilog,xil_defaultlib,../../../../../../../IP_Module/VP_Simple_Switch/src/rgb2ycbcr_0/src/rgb2ycbcr.v,
+rgb2ycbcr_0.v,verilog,xil_defaultlib,../../../../../../../IP_Module/VP_Simple_Switch/src/rgb2ycbcr_0/sim/rgb2ycbcr_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

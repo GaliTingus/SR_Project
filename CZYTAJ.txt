@@ -1,0 +1,7 @@
+***delay_line - Zawiera projekt lini opóżniającej do zaimportowanai w innych projektach
+***IP_Module - Zawiera wszystkie wygenerowane moduły IP, tam jest ich aktualna wersja ale nie modyfikować tam nic
+***LUT - projekt do LUT (binaryzacja)
+***REKA - Wszystkie projekty do detekcji skóry
+***tor_test - projekt z symulacją działania finalnego modułu. W symulacji w linijce .SW(3'bxxx) zmieniamy co ma byc na wyjsciu (000 to co na wejsciu, 001 obraz po konwersji rgb2ycbcr, 010 obraz po progowaniu) W tym projekcie warto modyfikować i podglądać kod wszystkim modułów poprzez kliknięcie na moduł (w Design Sources) prawym i opcja "Edit in IP Packager" i tam mamy edycję naszej paczki IP, po edycji musimy dać merge changes i repackage a póżniej w głównym projekcie upgrade package
+***tor_wizyjny - projek czystego toru wizyjnego bez niczego miedzy wejściem a wyjściem
+***REKA/tor_final - gotowy projekt z wygenerowanym bitstramem do wgrania na płytkę (uwaga przełączniki na płytce wszyzystkie w dół i zmieniać tylko 2 po prawej)

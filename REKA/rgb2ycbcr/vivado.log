@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 23 00:57:36 2018
+# Process ID: 9848
+# Current directory: C:/Users/GaliTingus/Documents/SR_Project/REKA/rgb2ycbcr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15340 C:\Users\GaliTingus\Documents\SR_Project\REKA\rgb2ycbcr\rgb2ycbcr.xpr
+# Log file: C:/Users/GaliTingus/Documents/SR_Project/REKA/rgb2ycbcr/vivado.log
+# Journal file: C:/Users/GaliTingus/Documents/SR_Project/REKA/rgb2ycbcr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/GaliTingus/Documents/SR_Project/REKA/rgb2ycbcr/rgb2ycbcr.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/GaliTingus/Documents/SR_Project/IP_Module/rgb2ycbcr'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 785.184 ; gain = 61.422
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 23 00:58:22 2018...

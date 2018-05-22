@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../tor_wizyjny.srcs/sim_1/imports/tb_src/hdmi_in.v" \
+"../../../../tor_wizyjny.srcs/sim_1/imports/tb_src/hdmi_out.v" \
+"../../../../tor_wizyjny.srcs/sim_1/imports/tb_src/tb_hdmi.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

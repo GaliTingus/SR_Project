@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../tor_test.srcs/sources_1/bd/hdmi_vga/ipshared/4868" \
+"../../../../tor_test.srcs/sources_1/ip/vp_switch_final_0/src/rgb2ycbcr_0/src/register.v" \
+"../../../../tor_test.srcs/sources_1/ip/vp_switch_final_0/src/rgb2ycbcr_0/src/rgb2ycbcr.v" \
+"../../../../tor_test.srcs/sources_1/ip/vp_switch_final_0/src/rgb2ycbcr_0/sim/rgb2ycbcr_0.v" \
+"../../../../tor_test.srcs/sources_1/ip/vp_switch_final_0/src/tresholding_0/src/tresholding.v" \
+"../../../../tor_test.srcs/sources_1/ip/vp_switch_final_0/src/tresholding_0/sim/tresholding_0.v" \
+"../../../../tor_test.srcs/sources_1/ip/vp_switch_final_0/src/vp_switch.v" \
+"../../../../tor_test.srcs/sources_1/ip/vp_switch_final_0/sim/vp_switch_final_0.v" \
+"../../../../tor_test.srcs/sim_1/imports/tb_src/hdmi_in.v" \
+"../../../../tor_test.srcs/sim_1/imports/tb_src/hdmi_out.v" \
+"../../../../tor_test.srcs/sim_1/imports/tb_src/tb_hdmi.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

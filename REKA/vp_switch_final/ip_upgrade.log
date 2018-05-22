@@ -1,0 +1,58 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed May 23 00:52:41 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'tresholding_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of tresholding_0 (xilinx.com:user:tresholding:1.0) from (Rev. 3) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed May 23 00:19:21 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'tresholding_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of tresholding_0 (xilinx.com:user:tresholding:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed May 23 00:19:20 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'rgb2ycbcr_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of rgb2ycbcr_0 (xilinx.com:user:rgb2ycbcr:1.0) from (Rev. 2) to (Rev. 7)
+

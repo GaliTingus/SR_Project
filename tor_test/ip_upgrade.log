@@ -1,0 +1,142 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed May 23 00:55:44 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_switch_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vp_switch_0 (xilinx.com:user:vp_switch:1.0 (Rev. 3)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed May 23 00:45:40 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_switch_final_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vp_switch_final_0 (xilinx.com:user:vp_switch_final:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed May 23 00:37:27 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'tresholding_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of tresholding_0 (xilinx.com:user:tresholding:1.0) from (Rev. 3) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed May 23 00:37:21 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_switch_final_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vp_switch_final_0 (xilinx.com:user:vp_switch_final:1.0 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed May 23 00:08:02 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_switch_final_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vp_switch_final_0 (xilinx.com:user:vp_switch_final:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue May 22 23:55:12 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_switch_final_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vp_switch_final_0 (xilinx.com:user:vp_switch_final:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue May 22 23:44:56 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_switch_final_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vp_switch_final_0 (xilinx.com:user:vp_switch_final:1.0 (Rev. 5)) to Vivado generation flows.
+
