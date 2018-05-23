@@ -71,14 +71,14 @@
         <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_xlconstant_0_0/hdmi_vga_xlconstant_0_0.xci">
           <Proxy FileSetName="hdmi_vga_xlconstant_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xci">
-          <Proxy FileSetName="hdmi_vga_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0.xci">
           <Proxy FileSetName="hdmi_vga_dvi2rgb_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0.xci">
           <Proxy FileSetName="hdmi_vga_rgb2vga_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xci">
+          <Proxy FileSetName="hdmi_vga_clk_wiz_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v">
@@ -105,6 +105,14 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/ip/tresholding_0/tresholding_0.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -258,20 +266,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="vp_switch_final_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vp_switch_final_0">
-      <File Path="$PSRCDIR/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="vp_switch_final_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="vp_switch_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vp_switch_0">
       <File Path="$PSRCDIR/sources_1/ip/vp_switch_0/vp_switch_0.xci">
         <FileInfo>
@@ -378,22 +372,9 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="vp_switch_final_0_synth_1" Type="Ft3:Synth" SrcSet="vp_switch_final_0" Part="xc7z010clg400-1" ConstrsSet="vp_switch_final_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/vp_switch_final_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="vp_switch_0_synth_1" Type="Ft3:Synth" SrcSet="vp_switch_0" Part="xc7z010clg400-1" ConstrsSet="vp_switch_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/vp_switch_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -529,29 +510,9 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="vp_switch_final_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="vp_switch_final_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="vp_switch_final_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="vp_switch_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="vp_switch_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="vp_switch_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

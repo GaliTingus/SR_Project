@@ -103,7 +103,7 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../tor_final.srcs/sources_1/b
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/rgb2ycbcr_0/sim/rgb2ycbcr_0.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/tresholding_0/src/tresholding.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/tresholding_0/sim/tresholding_0.v" \
-"../../../bd/hdmi_vga/ipshared/39d3/src/vp_switch.v" \
+"../../../bd/hdmi_vga/ipshared/3885/src/vp_switch.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/sim/hdmi_vga_vp_switch_final_0_0.v" \
 
 vlog -work xil_defaultlib \

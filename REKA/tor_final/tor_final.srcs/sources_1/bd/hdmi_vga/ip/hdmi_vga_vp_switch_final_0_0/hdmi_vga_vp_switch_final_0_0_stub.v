@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Wed May 23 01:02:21 2018
+// Date        : Wed May 23 17:34:01 2018
 // Host        : GaliTingusPC running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/hdmi_vga_vp_switch_final_0_0_stub.v
