@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
--- Date        : Wed May 23 17:34:01 2018
--- Host        : GaliTingusPC running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+-- Date        : Wed May 30 18:35:31 2018
+-- Host        : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
 -- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/hdmi_vga_vp_switch_final_0_0_stub.vhdl
+--               /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/hdmi_vga_vp_switch_final_0_0_stub.vhdl
 -- Design      : hdmi_vga_vp_switch_final_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

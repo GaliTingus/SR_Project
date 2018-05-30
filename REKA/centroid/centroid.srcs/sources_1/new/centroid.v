@@ -40,7 +40,13 @@ module centroid #
     //rejestry aktualnej pozycji na obrazie
     reg [10:0]x_pos = 0;
     reg [10:0]y_pos = 0;
+    wire eof;
+    wire prev_vsync;
+   
+   //detekcja konca ramki 
+    assign eof=(prev_vsync==1'b1 & v_sync==1'b1)?1'b1:1'b0;
     
+    //liczniki pozycji na obrazie
     always @(posedge clk)
         begin
             if(v_sync == 1) begin
@@ -50,6 +56,13 @@ module centroid #
             else begin
                 if(de == 1) begin
                     y_pos <= y_pos + 1;
+                    if(y_pos==IMG_W-1) begin
+                        y_pos <=0;
+                        x_pos <= x_pos +1;
+                        if (x_pos == IMG_H-1) begin
+                            x_pos <= 0;
+                        end
+                    end 
                 end 
             end
         end
