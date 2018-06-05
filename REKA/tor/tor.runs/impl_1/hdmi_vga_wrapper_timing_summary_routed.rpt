@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Wed May 16 16:38:17 2018
+| Date         : Tue Jun  5 11:06:07 2018
 | Host         : GaliTingusPC running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file hdmi_vga_wrapper_timing_summary_routed.rpt -rpx hdmi_vga_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design       : hdmi_vga_wrapper

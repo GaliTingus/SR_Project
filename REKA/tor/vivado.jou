@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun  5 11:00:15 2018
+# Process ID: 16812
+# Current directory: C:/Users/GaliTingus/Documents/SR_Project/REKA/tor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6396 C:\Users\GaliTingus\Documents\SR_Project\REKA\tor\tor.xpr
+# Log file: C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/vivado.log
+# Journal file: C:/Users/GaliTingus/Documents/SR_Project/REKA/tor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd}
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:vp_switch:1.0 [get_ips  hdmi_vga_vp_switch_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips hdmi_vga_vp_switch_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd]
+catch { config_ip_cache -export [get_ips -all hdmi_vga_vp_switch_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd]
+launch_runs -jobs 8 hdmi_vga_vp_switch_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd] -directory C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.ip_user_files -ipstatic_source_dir C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/REKA/tor/tor.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

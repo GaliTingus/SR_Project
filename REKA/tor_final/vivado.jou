@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun  5 10:59:00 2018
+# Process ID: 15148
+# Current directory: C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5316 C:\Users\GaliTingus\Documents\SR_Project\REKA\tor_final\tor_final.xpr
+# Log file: C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/vivado.log
+# Journal file: C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
