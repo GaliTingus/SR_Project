@@ -27,21 +27,33 @@ module centroid #
     )
     (
     input clk,
-    input ce,
-    input rst,
     input de,
     input h_sync,
     input v_sync,
-    input [7:0] mask,
-    input [10:0] x,
-    input [10:0] y
+    input mask,
+    
+    output [10:0] x,
+    output [10:0] y
     );
+    
+    reg [19:0] m00 = 0;
+    wire [31:0] m01;
+    wire [31:0] m10;    
+    
+    reg [31:0] r_x = 0;
+    reg [31:0] r_y = 0;
+    wire x_flag;
+    wire y_flag;
+
+    wire [31:0] x_quotient;
+    wire [31:0] y_quotient;
+    
     
     //rejestry aktualnej pozycji na obrazie
     reg [10:0]x_pos = 0;
     reg [10:0]y_pos = 0;
     wire eof;
-    wire prev_vsync;
+    reg prev_vsync = 1'b0;
    
    //detekcja konca ramki 
     assign eof=(prev_vsync==1'b1 & v_sync==1'b1)?1'b1:1'b0;
@@ -65,22 +77,61 @@ module centroid #
                     end 
                 end 
             end
-        end
-            
+            prev_vsync <= v_sync;
+    end
+
+    accum m01_calc
+    (
+        .B(y_pos),
+        .CLK(clk),
+        .CE(mask),
+        .SCLR(eof),
+        
+        .Q(m01)        
+    );           
+    
+    accum m10_calc (
+        .B(x_pos),
+        .CLK(clk),
+        .CE(mask),
+        .SCLR(eof),
+        
+        .Q(m10)
+    );
+        
+    divider x_center_calc (
+        .clk(clk),
+        .start(eof),
+        .dividend(m10),
+        .divisor(m00),
+        
+        .quotient(x_quotient),
+        .qv(x_flag)
+    );
+    
+    divider y_center_calc (
+        .clk(clk),
+        .start(eof),
+        .dividend(m01),
+        .divisor(m00),
+        
+        .quotient(y_quotient),
+        .qv(y_flag)
+    );    
     
     
+    always @(posedge x_flag)
+    begin
+        r_x <= x_quotient;
+    end
     
+    always @(posedge y_flag)
+    begin
+        r_y <= y_quotient;
+    end
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+//    Output assiggnments
+    assign x = r_x[31:20];
+    assign y = r_y[31:20];
     
 endmodule

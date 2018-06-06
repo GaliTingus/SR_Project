@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Wed May 23 01:00:03 2018" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Wed Jun  6 15:16:14 2018" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.4 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2086221" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "23c4e981-d2a7-45c3-88f1-5253af05e9de" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "15d67e3c8a5047fa999b4d64de1f02eb" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "73" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "79" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz" -context "user_environment"
@@ -24,11 +24,12 @@ webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "use
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
+webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "15454 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "29564 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "1.66_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "10576_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3598281845 -regid "" -xml C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "3.72_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "13280_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 3886538690 -regid "" -xml C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

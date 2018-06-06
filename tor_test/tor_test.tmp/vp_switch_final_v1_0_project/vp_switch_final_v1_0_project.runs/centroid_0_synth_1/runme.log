@@ -1,0 +1,201 @@
+
+*** Running vivado
+    with args -log centroid_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source centroid_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source centroid_0.tcl -notrace
+Command: synth_design -top centroid_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5396 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 358.902 ; gain = 102.770
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'centroid_0' [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/synth/centroid_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'centroid' [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/centroid.v:23]
+	Parameter IMG_H bound to: 64 - type: integer 
+	Parameter IMG_W bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'accum' [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/accum/synth/accum.vhd:69]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_IMPLEMENTATION bound to: 1 - type: integer 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 11 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_SCALE bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_accum_v12_0_11' declared at 'c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/accum/hdl/c_accum_v12_0_vh_rfs.vhd:2296' bound to instance 'U0' of component 'c_accum_v12_0_11' [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/accum/synth/accum.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'accum' (7#1) [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/accum/synth/accum.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'divider_32_20_0' [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/synth/divider_32_20_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'divider_32_20' [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/src/divider_32_20.v:8]
+	Parameter LATENCY bound to: 4 - type: integer 
+	Parameter DIVIDEND_W bound to: 32 - type: integer 
+	Parameter DIVISOR_W bound to: 20 - type: integer 
+	Parameter QUOTIENT_W bound to: 32 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter DIV bound to: 2'b01 
+	Parameter NOP bound to: 2'b10 
+	Parameter END bound to: 2'b11 
+INFO: [Synth 8-638] synthesizing module 'mult_32_20_lm' [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:71]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TYPE bound to: 1 - type: integer 
+	Parameter C_B_WIDTH bound to: 20 - type: integer 
+	Parameter C_B_TYPE bound to: 1 - type: integer 
+	Parameter C_OUT_HIGH bound to: 51 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_13' declared at 'c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/src/mult_32_20_lm/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_13' [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'mult_32_20_lm' (13#1) [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'divider_32_20' (14#1) [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/src/divider_32_20.v:8]
+INFO: [Synth 8-256] done synthesizing module 'divider_32_20_0' (15#1) [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/synth/divider_32_20_0.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'r_y_reg' and it is trimmed from '32' to '11' bits. [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/centroid.v:130]
+WARNING: [Synth 8-3936] Found unconnected internal register 'r_x_reg' and it is trimmed from '32' to '11' bits. [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/centroid.v:125]
+INFO: [Synth 8-256] done synthesizing module 'centroid' (16#1) [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/src/centroid.v:23]
+INFO: [Synth 8-256] done synthesizing module 'centroid_0' (17#1) [c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/synth/centroid_0.v:57]
+WARNING: [Synth 8-3331] design delay_line__parameterized4 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized4 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized4 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized2 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized2 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized2 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized1 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized0 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line has unconnected port SCLR
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[24]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[23]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[22]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[21]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[20]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[19]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[18]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[17]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[16]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[15]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[14]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[13]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[12]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[11]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[10]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[9]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[8]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[7]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[6]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[5]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[4]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[3]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[2]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[1]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[0]
+WARNING: [Synth 8-3331] design dsp has unconnected port CARRY_IN
+WARNING: [Synth 8-3331] design mult_gen_v12_0_13_viv has unconnected port CE
+WARNING: [Synth 8-3331] design mult_gen_v12_0_13_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port CEA1
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port CEA2
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port CEB1
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port CEB2
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port CEC
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port CECARRYIN
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port CECTRL
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port CEALUMODE
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port CEMULTCARRYIN
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port CEM
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port CEP
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port SCLRA
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port SCLRB
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port SCLRC
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port SCLRALLCARRYIN
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port SCLRCTRL
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port SCLRALUMODE
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port SCLRM
+WARNING: [Synth 8-3331] design xbip_dsp48e_wrapper_v3_0 has unconnected port SCLRP
+WARNING: [Synth 8-3331] design c_accum_v12_0_11_viv has unconnected port ADD
+WARNING: [Synth 8-3331] design c_accum_v12_0_11_viv has unconnected port C_IN
+WARNING: [Synth 8-3331] design c_accum_v12_0_11_viv has unconnected port BYPASS
+WARNING: [Synth 8-3331] design c_accum_v12_0_11_viv has unconnected port SSET
+WARNING: [Synth 8-3331] design c_accum_v12_0_11_viv has unconnected port SINIT
+WARNING: [Synth 8-3331] design centroid has unconnected port h_sync
+WARNING: [Synth 8-3331] design centroid has unconnected port mask[7]
+WARNING: [Synth 8-3331] design centroid has unconnected port mask[6]
+WARNING: [Synth 8-3331] design centroid has unconnected port mask[5]
+WARNING: [Synth 8-3331] design centroid has unconnected port mask[4]
+WARNING: [Synth 8-3331] design centroid has unconnected port mask[3]
+WARNING: [Synth 8-3331] design centroid has unconnected port mask[2]
+WARNING: [Synth 8-3331] design centroid has unconnected port mask[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 463.016 ; gain = 206.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 463.016 ; gain = 206.883
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.runs/centroid_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.runs/centroid_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  DSP48E => DSP48E1: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 696.754 ; gain = 0.000
+Failed to open file c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.runs/centroid_0_synth_1/.Xil/Vivado-8684-GaliTingusPC/elab.rtd.  Please check the path and rerun synthesis.
+invalid command name "NULL"
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 81 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  6 15:12:53 2018...

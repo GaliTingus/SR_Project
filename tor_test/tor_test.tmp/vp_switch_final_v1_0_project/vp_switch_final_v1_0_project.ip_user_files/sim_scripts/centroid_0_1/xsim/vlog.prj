@@ -1,0 +1,10 @@
+verilog xil_defaultlib  \
+"../../../../../../../IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/src/divider_32_20.v" \
+"../../../../../../../IP_Module/switch_final/src/centroid_0_1/src/divider_32_20_0/sim/divider_32_20_0.v" \
+"../../../../../../../IP_Module/switch_final/src/centroid_0_1/src/divider/sim/divider.v" \
+"../../../../../../../IP_Module/switch_final/src/centroid_0_1/src/centroid.v" \
+"../../../../../../../IP_Module/switch_final/src/centroid_0_1/sim/centroid_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

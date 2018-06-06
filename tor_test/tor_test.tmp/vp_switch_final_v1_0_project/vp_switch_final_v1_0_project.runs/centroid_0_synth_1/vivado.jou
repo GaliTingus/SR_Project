@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun  6 15:12:14 2018
+# Process ID: 8684
+# Current directory: c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.runs/centroid_0_synth_1
+# Command line: vivado.exe -log centroid_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source centroid_0.tcl
+# Log file: c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.runs/centroid_0_synth_1/centroid_0.vds
+# Journal file: c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.runs/centroid_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source centroid_0.tcl -notrace

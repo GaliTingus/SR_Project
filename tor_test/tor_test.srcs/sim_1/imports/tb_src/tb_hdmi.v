@@ -63,7 +63,7 @@ vp_switch_final_0 dut (
     .h_sync_in(rx_hsync),
     .v_sync_in(rx_vsync),
     .pixel_in({rx_red, rx_blue, rx_green}),
-    .SW(3'b001),
+    .SW(3'b010),
     
     .de_out(tx_de),
     .h_sync_out(tx_hsync),

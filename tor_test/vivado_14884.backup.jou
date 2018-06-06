@@ -1,0 +1,254 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun  6 13:55:36 2018
+# Process ID: 14884
+# Current directory: C:/Users/GaliTingus/Documents/SR_Project/tor_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10644 C:\Users\GaliTingus\Documents\SR_Project\tor_test\tor_test.xpr
+# Log file: C:/Users/GaliTingus/Documents/SR_Project/tor_test/vivado.log
+# Journal file: C:/Users/GaliTingus/Documents/SR_Project/tor_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.xpr
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild
+create_ip -name centroid -vendor xilinx.com -library user -version 1.0 -module_name centroid_0 -dir c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip
+set_property -dict [list CONFIG.IMG_H {64} CONFIG.IMG_W {64}] [get_ips centroid_0]
+generate_target {instantiation_template} [get_files c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci]
+generate_target all [get_files  c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci]
+catch { config_ip_cache -export [get_ips -all centroid_0] }
+export_ip_user_files -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci]
+launch_runs -jobs 8 centroid_0_synth_1
+export_simulation -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci] -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files -ipstatic_source_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::edit_ip_in_project -upgrade true -name vp_switch_final_v1_0_project -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/component.xml
+current_project tor_test
+current_project vp_switch_final_v1_0_project
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_ip -name centroid -vendor xilinx.com -library user -version 1.0 -module_name centroid_0 -dir c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src
+generate_target {instantiation_template} [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0/centroid_0.xci]
+generate_target all [get_files  c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0/centroid_0.xci]
+catch { config_ip_cache -export [get_ips -all centroid_0] }
+export_ip_user_files -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0/centroid_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0/centroid_0.xci]
+launch_runs -jobs 8 centroid_0_synth_1
+export_simulation -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0/centroid_0.xci] -directory c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::edit_ip_in_project -upgrade true -name centroid_v1_0_project -directory c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.tmp/centroid_v1_0_project c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/GaliTingus/Documents/SR_Project/IP_Module
+report_ip_status -name ip_status 
+upgrade_ip -srcset centroid_0 -vlnv xilinx.com:user:centroid:1.0 [get_ips  centroid_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips centroid_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 10 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/GaliTingus/Documents/SR_Project/IP_Module
+report_ip_status -name ip_status 
+upgrade_ip -srcset centroid_0 [get_ips  {centroid_0 vp_switch_final_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {centroid_0 vp_switch_final_0}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+generate_target all [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci]
+export_ip_user_files -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci] -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files -ipstatic_source_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset vp_switch_final_0
+set_property top vp_switch_final_0 [get_fileset vp_switch_final_0]
+move_files -fileset [get_fileset vp_switch_final_0] [get_files -of_objects [get_fileset sources_1] C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci]
+launch_run vp_switch_final_0_synth_1
+wait_on_run vp_switch_final_0_synth_1
+
+launch_simulation
+ipx::edit_ip_in_project -upgrade true -name centroid_v1_0_project -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/centroid_v1_0_project c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/component.xml
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+report_ip_status -name ip_status 
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/GaliTingus/Documents/SR_Project/IP_Module
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:centroid:1.0 [get_ips  centroid_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips centroid_0] -no_script -sync -force -quiet
+convert_ips [get_files  c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci]
+export_ip_user_files -of_objects  [get_files  c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci] -sync -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -force -quiet
+set_property coreContainer.enable 1 [current_project]
+generate_target all [get_files  c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci]
+catch { config_ip_cache -export [get_ips -all centroid_0] }
+export_ip_user_files -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci]
+launch_runs -jobs 8 centroid_0_synth_1
+export_simulation -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci] -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files -ipstatic_source_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_simulation
+launch_simulation
+source tb_hdmi.tcl
+run all
+run all
+close_sim
+launch_simulation
+ipx::edit_ip_in_project -upgrade true -name vp_switch_final_v1_0_project -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/component.xml
+update_compile_order -fileset sources_1
+create_ip -name centroid -vendor xilinx.com -library user -version 1.0 -module_name centroid_0 -dir c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src
+generate_target {instantiation_template} [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/centroid_0.xci]
+generate_target all [get_files  c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/centroid_0.xci]
+catch { config_ip_cache -export [get_ips -all centroid_0] }
+export_ip_user_files -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/centroid_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/centroid_0.xci]
+launch_runs -jobs 8 centroid_0_synth_1
+export_simulation -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/centroid_0.xci] -directory c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 11 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/GaliTingus/Documents/SR_Project/IP_Module
+report_ip_status -name ip_status 
+upgrade_ip -srcset vp_switch_final_0 -vlnv xilinx.com:user:vp_switch_final:1.0 [get_ips  vp_switch_final_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips vp_switch_final_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+generate_target all [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci]
+export_ip_user_files -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci] -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files -ipstatic_source_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset vp_switch_final_0
+set_property top vp_switch_final_0 [get_fileset vp_switch_final_0]
+move_files -fileset [get_fileset vp_switch_final_0] [get_files -of_objects [get_fileset sources_1] C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci]
+launch_run vp_switch_final_0_synth_1
+wait_on_run vp_switch_final_0_synth_1
+
+launch_simulation
+ipx::edit_ip_in_project -upgrade true -name centroid_v1_0_project -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/centroid_v1_0_project c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/component.xml
+update_compile_order -fileset sources_1
+create_ip -name divider_32_20 -vendor user.org -library user -version 1.0 -module_name divider_32_20_0 -dir c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/src
+generate_target {instantiation_template} [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/src/divider_32_20_0/divider_32_20_0.xci]
+generate_target all [get_files  c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/src/divider_32_20_0/divider_32_20_0.xci]
+catch { config_ip_cache -export [get_ips -all divider_32_20_0] }
+export_ip_user_files -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/src/divider_32_20_0/divider_32_20_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/src/divider_32_20_0/divider_32_20_0.xci]
+launch_runs -jobs 8 divider_32_20_0_synth_1
+export_simulation -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/src/divider_32_20_0/divider_32_20_0.xci] -directory c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/centroid_v1_0_project/centroid_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/centroid_v1_0_project/centroid_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/centroid_v1_0_project/centroid_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/centroid_v1_0_project/centroid_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/centroid_v1_0_project/centroid_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/centroid_v1_0_project/centroid_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/centroid_v1_0_project/centroid_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/src/divider/divider.xci] -no_script -reset -force -quiet
+remove_files  c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/src/divider/divider.xci
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/GaliTingus/Documents/SR_Project/IP_Module
+report_ip_status -name ip_status 
+upgrade_ip -srcset centroid_0 [get_ips  {centroid_0 vp_switch_final_0}] -log ip_upgrade.log
+upgrade_ip -srcset centroid_0 [get_ips  {centroid_0 vp_switch_final_0}] -log ip_upgrade.log
+upgrade_ip -srcset centroid_0 [get_ips  {centroid_0 vp_switch_final_0}] -log ip_upgrade.log
+report_ip_status -name ip_status 
+upgrade_ip -srcset centroid_0 -vlnv xilinx.com:user:centroid:1.0 [get_ips  centroid_0] -log ip_upgrade.log
+upgrade_ip -srcset vp_switch_final_0 -vlnv xilinx.com:user:vp_switch_final:1.0 [get_ips  vp_switch_final_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips vp_switch_final_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+upgrade_ip -srcset centroid_0 -vlnv xilinx.com:user:centroid:1.0 [get_ips  centroid_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips centroid_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+generate_target all [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci]
+export_ip_user_files -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci] -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files -ipstatic_source_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset vp_switch_final_0
+set_property top vp_switch_final_0 [get_fileset vp_switch_final_0]
+move_files -fileset [get_fileset vp_switch_final_0] [get_files -of_objects [get_fileset sources_1] C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci]
+launch_run vp_switch_final_0_synth_1
+wait_on_run vp_switch_final_0_synth_1
+
+launch_simulation
+source tb_hdmi.tcl
+run all
+run all
+run all
+run all
+ipx::edit_ip_in_project -upgrade true -name centroid_v1_0_project -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/centroid_v1_0_project c:/Users/GaliTingus/Documents/SR_Project/IP_Module/centroid/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/GaliTingus/Documents/SR_Project/IP_Module
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {centroid_0 vp_switch_final_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {centroid_0 vp_switch_final_0}] -no_script -sync -force -quiet
+generate_target all [get_files  {c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci}]
+catch { config_ip_cache -export [get_ips -all centroid_0] }
+catch { config_ip_cache -export [get_ips -all vp_switch_final_0] }
+export_ip_user_files -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci]
+launch_runs -jobs 8 centroid_0_synth_1
+export_simulation -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/centroid_0/centroid_0.xci] -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files -ipstatic_source_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci] -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files -ipstatic_source_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+run all
+run all
+run all
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name vp_switch_final_v1_0_project -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/component.xml
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:centroid:1.0 [get_ips  centroid_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips centroid_0] -no_script -sync -force -quiet
+generate_target all [get_files  c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/centroid_0.xci]
+catch { config_ip_cache -export [get_ips -all centroid_0] }
+export_ip_user_files -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/centroid_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/centroid_0.xci]
+launch_runs -jobs 8 centroid_0_synth_1
+export_simulation -of_objects [get_files c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final/src/centroid_0_1/centroid_0.xci] -directory c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/galitingus/documents/sr_project/tor_test/tor_test.tmp/vp_switch_final_v1_0_project/vp_switch_final_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property core_revision 12 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:vp_switch_final:1.0 [get_ips  vp_switch_final_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips vp_switch_final_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci]
+catch { config_ip_cache -export [get_ips -all vp_switch_final_0] }
+export_ip_user_files -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci]
+launch_runs -jobs 8 vp_switch_final_0_synth_1
+export_simulation -of_objects [get_files C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.srcs/sources_1/ip/vp_switch_final_0/vp_switch_final_0.xci] -directory C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files -ipstatic_source_dir C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/modelsim} {questa=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/questa} {riviera=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/riviera} {activehdl=C:/Users/GaliTingus/Documents/SR_Project/tor_test/tor_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+close_sim
+launch_simulation
