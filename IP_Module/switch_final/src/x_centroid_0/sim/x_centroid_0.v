@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:x_centroid:1.0
-// IP Revision: 3
+// IP Revision: 4
 
 `timescale 1ns/1ps
 
@@ -84,8 +84,8 @@ output wire vsync_out;
 output wire [23 : 0] pixel_out;
 
   x_centroid #(
-    .IMG_H('B10100000000),
-    .IMG_W('B01011010000)
+    .IMG_H('B01011010000),
+    .IMG_W('B10100000000)
   ) inst (
     .clk(clk),
     .de(de),

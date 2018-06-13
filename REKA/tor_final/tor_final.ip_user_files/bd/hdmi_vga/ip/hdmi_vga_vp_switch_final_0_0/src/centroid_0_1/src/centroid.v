@@ -22,8 +22,8 @@
 
 module centroid #(
     // wielkosc obrazu
-    parameter IMG_H = 11'd1280,
-    parameter IMG_W = 11'd720
+    parameter IMG_H = 11'd720,
+    parameter IMG_W = 11'd1280
     )
     (
     input clk,

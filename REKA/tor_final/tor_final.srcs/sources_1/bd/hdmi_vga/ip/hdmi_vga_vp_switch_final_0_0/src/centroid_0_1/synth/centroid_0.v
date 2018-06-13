@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:centroid:1.0
-// IP Revision: 12
+// IP Revision: 13
 
 (* X_CORE_INFO = "centroid,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "centroid_0,centroid,{}" *)
-(* CORE_GENERATION_INFO = "centroid_0,centroid,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=centroid,x_ipVersion=1.0,x_ipCoreRevision=12,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,IMG_H=10100000000,IMG_W=01011010000}" *)
+(* CORE_GENERATION_INFO = "centroid_0,centroid,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=centroid,x_ipVersion=1.0,x_ipCoreRevision=13,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,IMG_H=01011010000,IMG_W=10100000000}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module centroid_0 (
   clk,
@@ -75,8 +75,8 @@ output wire [10 : 0] x;
 output wire [10 : 0] y;
 
   centroid #(
-    .IMG_H('B10100000000),
-    .IMG_W('B01011010000)
+    .IMG_H('B01011010000),
+    .IMG_W('B10100000000)
   ) inst (
     .clk(clk),
     .de(de),

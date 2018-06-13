@@ -129,7 +129,7 @@ vlog -work xil_defaultlib -64 -incr "+incdir+../../../../tor_final.srcs/sources_
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/divider/sim/divider.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/centroid.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/sim/centroid_0.v" \
-"../../../bd/hdmi_vga/ipshared/3f7b/src/vp_switch.v" \
+"../../../bd/hdmi_vga/ipshared/ab53/src/vp_switch.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/sim/hdmi_vga_vp_switch_final_0_0.v" \
 
 vlog -work xil_defaultlib \

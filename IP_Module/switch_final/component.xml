@@ -48,7 +48,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>41627609</spirit:value>
+            <spirit:value>c44e1600</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -76,7 +76,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>41627609</spirit:value>
+            <spirit:value>c44e1600</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -412,8 +412,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>vp_switch_final_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>17</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2018-06-13T14:04:11Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>20</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2018-06-13T16:15:23Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:vp_switch_final:1.0_ARCHIVE_LOCATION">c:/Users/GaliTingus/Documents/SR_Project/IP_Module/switch_final</xilinx:tag>
       </xilinx:tags>
@@ -421,7 +421,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="90469e39"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fc266b79"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="3fc32b56"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2d5eb973"/>
     </xilinx:packagingInfo>
