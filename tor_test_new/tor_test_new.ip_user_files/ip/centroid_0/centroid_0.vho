@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:centroid:1.0
--- IP Revision: 8
+-- IP Revision: 9
 
 -- The following code must appear in the VHDL architecture header.
 
@@ -56,8 +56,8 @@ COMPONENT centroid_0
   PORT (
     clk : IN STD_LOGIC;
     de : IN STD_LOGIC;
-    h_sync : IN STD_LOGIC;
-    v_sync : IN STD_LOGIC;
+    hsync : IN STD_LOGIC;
+    vsync : IN STD_LOGIC;
     mask : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     x : OUT STD_LOGIC_VECTOR(10 DOWNTO 0);
     y : OUT STD_LOGIC_VECTOR(10 DOWNTO 0)
@@ -73,8 +73,8 @@ your_instance_name : centroid_0
   PORT MAP (
     clk => clk,
     de => de,
-    h_sync => h_sync,
-    v_sync => v_sync,
+    hsync => hsync,
+    vsync => vsync,
     mask => mask,
     x => x,
     y => y

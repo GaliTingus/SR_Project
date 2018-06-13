@@ -1,39 +1,16 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/rgb2ycbcr_0/src/register.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module register
-INFO: [VRFC 10-311] analyzing module delay_line
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/rgb2ycbcr_0/src/rgb2ycbcr.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module rgb2ycbcr
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/rgb2ycbcr_0/sim/rgb2ycbcr_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module rgb2ycbcr_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/tresholding_0/src/tresholding.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tresholding
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/tresholding_0/sim/tresholding_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tresholding_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/centroid_0_1/src/divider_32_20_0/src/divider_32_20.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/centroid_0/src/divider_32_20_0/src/divider_32_20.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module divider_32_20
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/centroid_0_1/src/divider_32_20_0/sim/divider_32_20_0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/centroid_0/src/divider_32_20_0/sim/divider_32_20_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module divider_32_20_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/centroid_0_1/src/divider/sim/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/centroid_0/src/divider/sim/divider.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module divider
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/centroid_0_1/src/centroid.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/centroid_0/src/centroid.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module centroid
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/centroid_0_1/sim/centroid_0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/centroid_0/sim/centroid_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module centroid_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/vp_switch.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module vp_switch_final
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/sim/vp_switch_final_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module vp_switch_final_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sim_1/imports/tb_src/hdmi_in.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test_new/tor_test_new.srcs/sim_1/imports/tb_src/hdmi_in.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module hdmi_in
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sim_1/imports/tb_src/hdmi_out.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test_new/tor_test_new.srcs/sim_1/imports/tb_src/hdmi_out.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module hdmi_out
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sim_1/imports/tb_src/tb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/GaliTingus/Documents/SR_Project/tor_test_new/tor_test_new.srcs/sim_1/imports/tb_src/tb_hdmi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_hdmi
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/rgb2ycbcr_0/src/MUL/sim/MUL.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MUL
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/rgb2ycbcr_0/src/ADD/sim/ADD.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity ADD
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/centroid_0_1/src/accum/sim/accum.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity accum
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/lsriw/sr/HyjekDaniel/SR_Project/tor_test_new/tor_test_new.srcs/sources_1/ip/vp_switch_final_0/src/centroid_0_1/src/divider_32_20_0/src/mult_32_20_lm/sim/mult_32_20_lm.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity mult_32_20_lm

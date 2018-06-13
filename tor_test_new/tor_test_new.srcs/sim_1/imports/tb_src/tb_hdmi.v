@@ -56,20 +56,18 @@ hdmi_in file_input (
     .hdmi_b(rx_blue)
     );
 	 
+wire [10:0] x_center;
+wire [10:0] y_center;
 
-
-vp_switch_final_0 dut (
+centroid_0 dut (
     .clk(rx_pclk),    
-    .de_in(rx_de),
-    .h_sync_in(rx_hsync),
-    .v_sync_in(rx_vsync),
-    .pixel_in({rx_red, rx_blue, rx_green}),
-    .SW(3'b010),
+    .de(rx_de),
+    .hsync(rx_hsync),
+    .vsync(rx_vsync),
+    .mask(rx_red),
     
-    .de_out(tx_de),
-    .h_sync_out(tx_hsync),
-    .v_sync_out(tx_vsync),
-    .pixel_out({tx_red, tx_green, tx_blue})
+    .x(x_center),
+    .y(y_center)
 ); 
 
 

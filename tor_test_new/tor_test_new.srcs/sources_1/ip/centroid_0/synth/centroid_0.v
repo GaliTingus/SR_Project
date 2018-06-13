@@ -48,17 +48,17 @@
 
 
 // IP VLNV: xilinx.com:user:centroid:1.0
-// IP Revision: 8
+// IP Revision: 9
 
 (* X_CORE_INFO = "centroid,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "centroid_0,centroid,{}" *)
-(* CORE_GENERATION_INFO = "centroid_0,centroid,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=centroid,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,IMG_H=00001000000,IMG_W=00001000000}" *)
+(* CORE_GENERATION_INFO = "centroid_0,centroid,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=centroid,x_ipVersion=1.0,x_ipCoreRevision=9,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,IMG_H=00001000000,IMG_W=00001000000}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module centroid_0 (
   clk,
   de,
-  h_sync,
-  v_sync,
+  hsync,
+  vsync,
   mask,
   x,
   y
@@ -68,8 +68,8 @@ module centroid_0 (
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 input wire de;
-input wire h_sync;
-input wire v_sync;
+input wire hsync;
+input wire vsync;
 input wire [7 : 0] mask;
 output wire [10 : 0] x;
 output wire [10 : 0] y;
@@ -80,8 +80,8 @@ output wire [10 : 0] y;
   ) inst (
     .clk(clk),
     .de(de),
-    .h_sync(h_sync),
-    .v_sync(v_sync),
+    .hsync(hsync),
+    .vsync(vsync),
     .mask(mask),
     .x(x),
     .y(y)

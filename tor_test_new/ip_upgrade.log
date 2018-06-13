@@ -1,5 +1,64 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Jun 13 12:02:17 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'centroid_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of centroid_0 (xilinx.com:user:centroid:1.0) from (Rev. 8) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'centroid_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'h_sync'
+
+-Upgrade has removed port 'v_sync'
+
+-Upgrade has added port 'hsync'
+
+-Upgrade has added port 'vsync'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Jun 13 12:02:06 2018
+| Host         : GaliTingusPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_switch_final_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vp_switch_final_0 (xilinx.com:user:vp_switch_final:1.0 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
 | Date         : Wed Jun  6 18:33:02 2018
 | Host         : debian running 64-bit Debian GNU/Linux 9.3 (stretch)

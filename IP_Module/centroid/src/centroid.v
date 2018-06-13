@@ -20,48 +20,45 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module centroid #
-    (
+module centroid #(
     parameter IMG_H = 11'd64,
     parameter IMG_W = 11'd64
     )
     (
     input clk,
     input de,
-    input h_sync,
-    input v_sync,
-    input [7:0]mask,
+    input hsync,
+    input vsync,
+    input mask,
     
     output [10:0] x,
     output [10:0] y
     );
     
+    reg [10:0] x_pos = 0;
+    reg [10:0] y_pos = 0;
+    reg prev_vsync = 1'b0;
+    reg current_vsync = 1'b0;
+    
     reg [19:0] m00 = 0;
     wire [31:0] m01;
-    wire [31:0] m10;    
+    wire [31:0] m10;
     
     reg [31:0] r_x = 0;
     reg [31:0] r_y = 0;
     wire x_flag;
     wire y_flag;
 
+    wire eof;
     wire [31:0] x_quotient;
     wire [31:0] y_quotient;
     
-    
-    //rejestry aktualnej pozycji na obrazie
-    reg [10:0]x_pos = 0;
-    reg [10:0]y_pos = 0;
-    wire eof;
-    reg prev_vsync = 1'b0;
-    reg current_vsync = 1'b0;
-   
-       always @(posedge clk)
+    always @(posedge clk)
     begin
         prev_vsync <= current_vsync;
-        current_vsync <= v_sync;
+        current_vsync <= vsync;
         
-        if (v_sync == 1'b1) begin
+        if (vsync == 1'b1) begin
             x_pos <= 0;
             y_pos <= 0;
         end 
@@ -89,28 +86,26 @@ module centroid #
         else if (de == 1'b1) begin
             m00 <= m00 + mask;
         end
-end
-
-
-    accum m01_calc
-    (
-        .B(y_pos),
-        .CLK(clk),
-        .CE(mask[0]),
-        .SCLR(eof),
-        
-        .Q(m01)        
-    );           
+    end
     
-    accum m10_calc (
+    accum m10_calc_module (
         .B(x_pos),
         .CLK(clk),
-        .CE(mask[0]),
+        .CE(mask),
         .SCLR(eof),
         
         .Q(m10)
     );
+    
+    accum m01_calc_module (
+        .B(y_pos),
+        .CLK(clk),
+        .CE(mask),
+        .SCLR(eof),
         
+        .Q(m01)
+    );
+    
     divider_32_20_0 x_center_calc (
         .clk(clk),
         .start(eof),
@@ -129,21 +124,19 @@ end
         
         .quotient(y_quotient),
         .qv(y_flag)
-    );    
+    );
     
-    
-    always @(posedge x_flag)
+    always @(posedge clk)
     begin
-        r_x <= x_quotient;
-    end
-    
-    always @(posedge y_flag)
-    begin
-        r_y <= y_quotient;
+        if (x_flag == 1'b1) begin
+            r_x <= x_quotient;
+        end
+        if (y_flag == 1'b1) begin
+            r_y <= y_quotient;
+        end  
     end
     
 //    Output assiggnments
     assign x = r_x[10:0];
     assign y = r_y[10:0];
-    
 endmodule

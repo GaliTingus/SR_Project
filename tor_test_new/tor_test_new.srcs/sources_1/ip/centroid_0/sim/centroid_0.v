@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:centroid:1.0
-// IP Revision: 8
+// IP Revision: 9
 
 `timescale 1ns/1ps
 
@@ -56,8 +56,8 @@
 module centroid_0 (
   clk,
   de,
-  h_sync,
-  v_sync,
+  hsync,
+  vsync,
   mask,
   x,
   y
@@ -67,8 +67,8 @@ module centroid_0 (
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 input wire de;
-input wire h_sync;
-input wire v_sync;
+input wire hsync;
+input wire vsync;
 input wire [7 : 0] mask;
 output wire [10 : 0] x;
 output wire [10 : 0] y;
@@ -79,8 +79,8 @@ output wire [10 : 0] y;
   ) inst (
     .clk(clk),
     .de(de),
-    .h_sync(h_sync),
-    .v_sync(v_sync),
+    .hsync(hsync),
+    .vsync(vsync),
     .mask(mask),
     .x(x),
     .y(y)
