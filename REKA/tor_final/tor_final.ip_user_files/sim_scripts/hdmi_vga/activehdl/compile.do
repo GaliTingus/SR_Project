@@ -13,6 +13,9 @@ vlib activehdl/xbip_dsp48_wrapper_v3_0_4
 vlib activehdl/xbip_dsp48_addsub_v3_0_4
 vlib activehdl/xbip_addsub_v3_0_4
 vlib activehdl/c_addsub_v12_0_11
+vlib activehdl/xbip_dsp48_acc_v3_0_4
+vlib activehdl/xbip_accum_v3_0_4
+vlib activehdl/c_accum_v12_0_11
 
 vmap xil_defaultlib activehdl/xil_defaultlib
 vmap xpm activehdl/xpm
@@ -26,12 +29,15 @@ vmap xbip_dsp48_wrapper_v3_0_4 activehdl/xbip_dsp48_wrapper_v3_0_4
 vmap xbip_dsp48_addsub_v3_0_4 activehdl/xbip_dsp48_addsub_v3_0_4
 vmap xbip_addsub_v3_0_4 activehdl/xbip_addsub_v3_0_4
 vmap c_addsub_v12_0_11 activehdl/c_addsub_v12_0_11
+vmap xbip_dsp48_acc_v3_0_4 activehdl/xbip_dsp48_acc_v3_0_4
+vmap xbip_accum_v3_0_4 activehdl/xbip_accum_v3_0_4
+vmap c_accum_v12_0_11 activehdl/c_accum_v12_0_11
 
 vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ipshared/4868" "+incdir+../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ipshared/4868" \
-"/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 
 vcom -work xpm -93 \
-"/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+"C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work xil_defaultlib -93 \
 "../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncBase.vhd" \
@@ -103,7 +109,27 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../tor_final.srcs/sources_1/b
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/rgb2ycbcr_0/sim/rgb2ycbcr_0.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/tresholding_0/src/tresholding.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/tresholding_0/sim/tresholding_0.v" \
-"../../../bd/hdmi_vga/ipshared/3885/src/vp_switch.v" \
+
+vcom -work xbip_dsp48_acc_v3_0_4 -93 \
+"../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/accum/hdl/xbip_dsp48_acc_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_accum_v3_0_4 -93 \
+"../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/accum/hdl/xbip_accum_v3_0_vh_rfs.vhd" \
+
+vcom -work c_accum_v12_0_11 -93 \
+"../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/accum/hdl/c_accum_v12_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/accum/sim/accum.vhd" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/divider_32_20_0/src/mult_32_20_lm/sim/mult_32_20_lm.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ipshared/4868" "+incdir+../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ipshared/4868" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/divider_32_20_0/src/divider_32_20.v" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/divider_32_20_0/sim/divider_32_20_0.v" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/divider/sim/divider.v" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/centroid.v" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/sim/centroid_0.v" \
+"../../../bd/hdmi_vga/ipshared/3f7b/src/vp_switch.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/sim/hdmi_vga_vp_switch_final_0_0.v" \
 
 vlog -work xil_defaultlib \

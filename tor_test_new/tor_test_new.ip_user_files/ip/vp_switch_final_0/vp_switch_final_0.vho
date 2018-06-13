@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:vp_switch_final:1.0
--- IP Revision: 12
+-- IP Revision: 17
 
 -- The following code must appear in the VHDL architecture header.
 

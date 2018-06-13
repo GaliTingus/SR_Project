@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:user:centroid:1.0
-// IP Revision: 9
+// IP Revision: 12
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -55,13 +55,13 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 centroid_0 your_instance_name (
-  .clk(clk),      // input wire clk
-  .de(de),        // input wire de
-  .hsync(hsync),  // input wire hsync
-  .vsync(vsync),  // input wire vsync
-  .mask(mask),    // input wire [7 : 0] mask
-  .x(x),          // output wire [10 : 0] x
-  .y(y)          // output wire [10 : 0] y
+  .clk(clk),        // input wire clk
+  .de(de),          // input wire de
+  .h_sync(h_sync),  // input wire h_sync
+  .v_sync(v_sync),  // input wire v_sync
+  .mask(mask),      // input wire [7 : 0] mask
+  .x(x),            // output wire [10 : 0] x
+  .y(y)            // output wire [10 : 0] y
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

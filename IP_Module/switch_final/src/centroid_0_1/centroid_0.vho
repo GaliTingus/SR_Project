@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:centroid:1.0
--- IP Revision: 6
+-- IP Revision: 12
 
 -- The following code must appear in the VHDL architecture header.
 

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/GaliTingus/Documents/SR_Project/tor_wizyjny/tor_wizyjny.runs/synth_1'
+HD_PWD='C:/Users/GaliTingus/Documents/SR_Project/tor_test_new/tor_test_new.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

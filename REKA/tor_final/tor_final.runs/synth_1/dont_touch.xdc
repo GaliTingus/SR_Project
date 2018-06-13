@@ -24,4 +24,50 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_xlcons
 # IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/hdmi_vga_vp_switch_final_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_vp_switch_final_0_0 || ORIG_REF_NAME==hdmi_vga_vp_switch_final_0_0} -quiet] -quiet
 
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/rgb2ycbcr_0/rgb2ycbcr_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==rgb2ycbcr_0 || ORIG_REF_NAME==rgb2ycbcr_0} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/rgb2ycbcr_0/src/MUL/MUL.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==MUL || ORIG_REF_NAME==MUL} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/rgb2ycbcr_0/src/ADD/ADD.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ADD || ORIG_REF_NAME==ADD} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/tresholding_0/tresholding_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==tresholding_0 || ORIG_REF_NAME==tresholding_0} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/centroid_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==centroid_0 || ORIG_REF_NAME==centroid_0} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/accum/accum.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==accum || ORIG_REF_NAME==accum} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/divider_32_20_0/divider_32_20_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==divider_32_20_0 || ORIG_REF_NAME==divider_32_20_0} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/divider_32_20_0/src/mult_32_20_lm/mult_32_20_lm.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mult_32_20_lm || ORIG_REF_NAME==mult_32_20_lm} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/divider/divider.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==divider || ORIG_REF_NAME==divider} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/divider/src/mult_32_20_lm/mult_32_20_lm.xci
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mult_32_20_lm || ORIG_REF_NAME==mult_32_20_lm} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/x_centroid_0/x_centroid_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==x_centroid_0 || ORIG_REF_NAME==x_centroid_0} -quiet] -quiet
+
+# XDC: bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_vga_dvi2rgb_0_0 || ORIG_REF_NAME==hdmi_vga_dvi2rgb_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc
+
+# XDC: bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_vga_clk_wiz_0_0 || ORIG_REF_NAME==hdmi_vga_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_vga_clk_wiz_0_0 || ORIG_REF_NAME==hdmi_vga_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_ooc.xdc
+
 # XDC: bd/hdmi_vga/hdmi_vga_ooc.xdc

@@ -59,17 +59,31 @@ hdmi_in file_input (
 wire [10:0] x_center;
 wire [10:0] y_center;
 
-centroid_0 dut (
-    .clk(rx_pclk),    
-    .de(rx_de),
-    .hsync(rx_hsync),
-    .vsync(rx_vsync),
-    .mask(rx_red),
+//centroid_0 dut (
+//    .clk(rx_pclk),    
+//    .de(rx_de),
+//    .h_sync(rx_hsync),
+//    .v_sync(rx_vsync),
+//    .mask(rx_red),
     
-    .x(x_center),
-    .y(y_center)
-); 
+//    .x(x_center),
+//    .y(y_center)
+//); 
 
+vp_switch_final_0 dut
+(
+    .clk(rx_pclk),
+    .de_in(rx_de),
+    .h_sync_in(rx_hsync),
+    .v_sync_in(rx_vsync),
+    .pixel_in({rx_red, rx_green, rx_blue}),
+    .SW(3'b011),
+    
+    .de_out(tx_de),
+    .h_sync_out(tx_hsync),
+    .v_sync_out(tx_vsync),
+    .pixel_out({tx_red, tx_green, tx_blue})
+);
 
 
 
