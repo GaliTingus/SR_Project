@@ -1,8 +1,9 @@
 -makelib ies_lib/xil_defaultlib -sv \
-  "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 -endlib
 -makelib ies_lib/xpm \
-  "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncBase.vhd" \
@@ -94,7 +95,7 @@
   "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/divider/sim/divider.v" \
   "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/centroid.v" \
   "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/sim/centroid_0.v" \
-  "../../../bd/hdmi_vga/ipshared/ab53/src/vp_switch.v" \
+  "../../../bd/hdmi_vga/ipshared/d70d/src/vp_switch.v" \
   "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/sim/hdmi_vga_vp_switch_final_0_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

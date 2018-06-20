@@ -24,23 +24,23 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.cache/wt [current_project]
-set_property parent.project_path C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
+set_property webtalk.parent_dir /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.cache/wt [current_project]
+set_property parent.project_path /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/GaliTingus/Documents/SR_Project/IP_Module [current_project]
-set_property ip_output_repo c:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.cache/ip [current_project]
+set_property ip_repo_paths /home/lsriw/sr/HyjekDaniel/SR_Project/IP_Module [current_project]
+set_property ip_output_repo /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v
-add_files C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
-set_property used_in_implementation false [get_files -all c:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/hdmi_vga_ooc.xdc]
+read_verilog -library xil_defaultlib /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v
+add_files /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
+set_property used_in_implementation false [get_files -all /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc]
+set_property used_in_implementation false [get_files -all /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/hdmi_vga_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -50,8 +50,8 @@ set_property used_in_implementation false [get_files -all C:/Users/GaliTingus/Do
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
-set_property used_in_implementation false [get_files C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+read_xdc /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
+set_property used_in_implementation false [get_files /home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

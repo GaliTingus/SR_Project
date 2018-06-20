@@ -34,10 +34,11 @@ vmap xbip_accum_v3_0_4 questa_lib/msim/xbip_accum_v3_0_4
 vmap c_accum_v12_0_11 questa_lib/msim/c_accum_v12_0_11
 
 vlog -work xil_defaultlib -64 -sv "+incdir+../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ipshared/4868" "+incdir+../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ipshared/4868" \
-"C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -64 -93 \
-"C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+"/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../../tor_final.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncBase.vhd" \
@@ -129,7 +130,7 @@ vlog -work xil_defaultlib -64 "+incdir+../../../../tor_final.srcs/sources_1/bd/h
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/divider/sim/divider.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/src/centroid.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/src/centroid_0_1/sim/centroid_0.v" \
-"../../../bd/hdmi_vga/ipshared/ab53/src/vp_switch.v" \
+"../../../bd/hdmi_vga/ipshared/d70d/src/vp_switch.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_switch_final_0_0/sim/hdmi_vga_vp_switch_final_0_0.v" \
 
 vlog -work xil_defaultlib \

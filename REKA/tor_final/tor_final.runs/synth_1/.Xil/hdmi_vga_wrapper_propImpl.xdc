@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:c:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc rfile:../../../tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc id:1 order:EARLY scoped_inst:hdmi_vga_i/clk_wiz_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Users/GaliTingus/Documents/SR_Project/REKA/tor_final/tor_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc rfile:../../../tor_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc rfile:../../../tor_final.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc id:1 order:EARLY scoped_inst:hdmi_vga_i/clk_wiz_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/lsriw/sr/HyjekDaniel/SR_Project/REKA/tor_final/tor_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc rfile:../../../tor_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc id:2} [current_design]
 set_property src_info {type:SCOPED_XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.08
 set_property src_info {type:XDC file:2 line:9 export:INPUT save:INPUT read:READ} [current_design]

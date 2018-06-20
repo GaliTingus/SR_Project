@@ -104,6 +104,21 @@ module vp_switch_final(
         .hsync_out(h_sync_mux[3]),
         .de_out(de_mux[3])        
     );
+    
+    
+    
+    median5x5_0 mediana
+    (
+        .pixel_in(pixel_mux[3]),
+        .clk(clk),
+        .v_sync_in(v_sync_mux[3]),
+        .h_sync_in(h_sync_mux[3]),
+        .de_in(de_mux[3]),
+        .pixel_out(pixel_mux[7]),
+        .v_sync_out(v_sync_mux[7]),
+        .h_sync_out(h_sync_mux[7]),
+        .de_out(de_mux[7])        
+    );
         
         
     
